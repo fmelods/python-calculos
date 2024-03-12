@@ -298,3 +298,29 @@ print(f"Anos trabalhados:", anos_trabalhados)
 print(f"Dias trabalhados:", dias_trabalhados)
 print(f"Horas trabalhadas:", horas_trabalhadas)
 print(f"Anos para se aposentar:", anos_aposentadoria)
+
+print()
+
+# 1 - Lista 3 (viagem de carro)
+distancia_a_percorrer = float(input("Digite a distância a ser percorrida com o carro: "))
+velocidade_media_esperada = float(input("Digite a velocidade média esperada para a viagem: "))
+tempo_de_viagem = (distancia_a_percorrer / velocidade_media_esperada)
+print(f"O tempo até você completar sua viagem é: {tempo_de_viagem:.2f} hora.")
+
+print()
+
+# 2 - Lista 3 (cédulas do caixa eletrônico)
+
+print()
+
+# 3 - Lista 3 (empréstimo bancário)
+
+print()
+
+# 4 - List 3 (quantidade de horas e minutos)
+
+print()
+
+# 5 - Lista 3 (quantidade horas, minutos e segundos)
+
+print()
