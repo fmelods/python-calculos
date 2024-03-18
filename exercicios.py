@@ -268,25 +268,15 @@ anos_trabalhados = float(input("Digite quantos anos você já trabalhou: "))
 
 print()
 
-
 # Função para calcular a quantidade de dias úteis em um ano
 def dias_uteis():
   dias_ano = 365
   sabados_domingos = 52 * 2
   feriados = 10
   return dias_ano - sabados_domingos - feriados
-
-
-# Cálculo de dias trabalhados
 dias_trabalhados = anos_trabalhados * dias_uteis()
-
-# Cálculo de horas trabalhadas
 horas_trabalhadas = dias_trabalhados * 8
-
-# Cálculo da quantidade de anos para se aposentar
 anos_aposentadoria = 90 - (idade + anos_trabalhados)
-
-# Exibição dos dados do usuário
 print(f"Nome completo:", nome_completo.upper())
 print(f"Nome completo:", nome_completo.lower())
 print(f"Nome completo:", nome_completo.title())
@@ -309,18 +299,62 @@ print(f"O tempo até você completar sua viagem é: {tempo_de_viagem:.2f} hora."
 
 print()
 
-# 2 - Lista 3 (cédulas do caixa eletrônico)
-
+# 2 - Lista 3 (cédulas do caixa eletrônico que dispensa 50, 20 e 10)
+def caixa_eletronico():
+  notas = [50, 20, 10]
+  qtd_notas = {nota: 0 for nota in notas}
+  valor = int(input("Digite o valor a ser sacado (múltiplo de 10): "))
+  if valor % 10 != 0:
+    print("Valor inválido! Digite um valor múltiplo de 10.")
+    return
+  for nota in notas:
+    qtd_notas[nota] = valor // nota
+    valor %= nota
+  print("Relatório de notas:")
+  for nota, qtd in qtd_notas.items():
+    print(f"- {nota} reais: {qtd}")
+caixa_eletronico()
 print()
 
 # 3 - Lista 3 (empréstimo bancário)
+def aprovar_emprestimo():
+    valor_casa = float(input("Digite o valor do imóvel: R$ "))
+    salario = float(input("Digite o seu salário: R$ "))
+    anos_pagar = int(input("Digite a quantidade de anos para pagar: "))
+    prestacao_mensal = valor_casa / (anos_pagar * 12)
+    porcentagem_salario = prestacao_mensal / salario * 100
+    if porcentagem_salario <= 30:
+        print("Empréstimo aprovado!")
+        print(f"Valor da prestação mensal: R$ {prestacao_mensal:.2f}")
+        print(f"Porcentagem do salário comprometida: {porcentagem_salario:.2f}%")
+    else:
+        print("Empréstimo negado.")
+        print(f"Valor da prestação mensal excede 30% do seu salário.")
+        print(f"Porcentagem do salário comprometida: {porcentagem_salario:.2f}%")      
+aprovar_emprestimo()
 
 print()
 
 # 4 - List 3 (quantidade de horas e minutos)
-
+def converter_minutos(minutos):
+    horas = minutos // 60
+    minutos_restantes = minutos % 60
+    saída = f"{horas}h{minutos_restantes}m"
+    return saída
+tempo_minutos = int(input("Digite a quantidade de minutos: "))
+tempo_convertido = converter_minutos(tempo_minutos)
+print(f"Tempo convertido: {tempo_convertido}")
 print()
 
 # 5 - Lista 3 (quantidade horas, minutos e segundos)
+def converter_segundos(segundos):
+    horas = segundos // 3600
+    minutos_restantes = (segundos % 3600) // 60
+    segundos_restantes = (segundos % 3600) % 60
+    saida = f"{horas}h{minutos_restantes}m{segundos_restantes}s"
+    return saida
+tempo_segundos = int(input("Digite a quantidade de segundos: "))
+tempo_convertido = converter_segundos(tempo_segundos)
+print(f"Tempo convertido: {tempo_convertido}")
 
 print()
