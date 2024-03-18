@@ -1,4 +1,4 @@
-# 1 exercícios a-m (calculo)
+# 1 exercícios a-m (cálculo)
 a = 11
 b = 3
 print(a+b*a)
@@ -52,8 +52,8 @@ print(x and not y or a//b != a % b)
 
 print()
 
-# 1 - Lista 1 (alo mundo)
-print(f"alo mundo")
+# 1 - Lista 1 (alô mundo)
+print(f"alô mundo")
 
 print()
 
@@ -258,17 +258,12 @@ print(f"Você perdeu {perda_dias_total:.2f} dias de vida.")
 print()
 
 # 3 - Lista 2 (Cadastro do usuário)
-# Solicitação dos dados do usuário
 nome_completo = input("Digite seu nome completo: ")
 idade = int(input("Digite sua idade: "))
 genero = input("Digite seu gênero (M/F): ").upper()
 estado_civil = input("Digite seu estado civil: ")
 salario = float(input("Digite seu salário: "))
 anos_trabalhados = float(input("Digite quantos anos você já trabalhou: "))
-
-print()
-
-# Função para calcular a quantidade de dias úteis em um ano
 def dias_uteis():
   dias_ano = 365
   sabados_domingos = 52 * 2
@@ -356,5 +351,3 @@ def converter_segundos(segundos):
 tempo_segundos = int(input("Digite a quantidade de segundos: "))
 tempo_convertido = converter_segundos(tempo_segundos)
 print(f"Tempo convertido: {tempo_convertido}")
-
-print()
