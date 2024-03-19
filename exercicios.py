@@ -351,3 +351,5 @@ def converter_segundos(segundos):
 tempo_segundos = int(input("Digite a quantidade de segundos: "))
 tempo_convertido = converter_segundos(tempo_segundos)
 print(f"Tempo convertido: {tempo_convertido}")
+
+print()
