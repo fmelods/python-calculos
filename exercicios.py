@@ -353,3 +353,83 @@ tempo_convertido = converter_segundos(tempo_segundos)
 print(f"Tempo convertido: {tempo_convertido}")
 
 print()
+
+# 1 - Lista 4 (celsius para kelvin)
+temperatura_celsius = float(input("Digite uma temperatura em graus Celsius: "))
+calculo_kelvin = (temperatura_celsius + 273)
+print(f"A temperatura em Kelvin é:", calculo_kelvin)
+
+print()
+
+# 2 - Lista 4 (Calcular IMC)
+altura = float(input("Digite sua altura (em metros): "))
+peso = float(input("Digite o seu peso (em Kg): "))
+imc = (peso / altura**altura)
+print (f"seu imc é: ", imc)
+
+print()
+
+# 3 - Lista 4 (Multa de velocidade)
+velocidade = float(input("Digite a velocidade do carro: "))
+limite_velocidade = 80.0
+if velocidade > limite_velocidade:
+   excesso = velocidade - limite_velocidade
+   multa = excesso * 5.00
+   print(f"Velocidade do carro: {velocidade}km/h")
+   print(f"Limite de Velocidade: {limite_velocidade}km/h")
+   print(f"Excesso: {excesso}km/h")
+   print(f"Multa a ser paga: R${multa:.2f}")
+else:
+   print("Velocidade dentro do limite permitido. Nenhuma multa será aplicada.")
+
+print()
+
+# 4 - Lista 4 (Média de Exercícios de Média de Aproveitamento)
+rm = int(input("Digite seu RM: "))
+nota1 = float(input("Digite a 1ª nota: "))
+nota2 = float(input("Digite a 2ª nota: "))
+nota3 = float(input("Digite a 3ª nota: "))
+me = (nota1+nota2+nota3)/3
+ma = (nota1 + nota2 * 2 + nota3 * 3 + me)/7
+print(f"A sua média de aproveitamento foi de: ", ma)
+
+print()
+
+# 5 - Lista 4 (Aumento de salário por cargos)
+salario = float(input("Digite o quanto você ganha de salário: "))
+salario_gerente = (salario / 100) * 10 + salario
+salario_engenheiro = (salario / 100) * 20 + salario
+salario_tecnico = (salario / 100) * 30 + salario
+outros_cargos = (salario / 100) * 40 + salario
+print(f"Verifique seu novo salário como Gerente: ",salario_gerente)
+print(f"Verifique seu novo salário como Engenheiro: ",salario_engenheiro)
+print(f"Verifique seu novo salário como Técnico: ",salario_tecnico)
+print(f"Verifique seu novo salário em outros cargos: ",outros_cargos)
+
+print()
+
+# 6 - Lista 4 (Consumo de Energia Elétrica)
+
+print()
+
+# 7 - Lista 4 (Percentual de Imposto)
+quantidade_1001 = int(input("Digite quantos produtos do 1001 você quer: "))
+quantidade_1324 = int(input("Digite quantos produtos dos 1324 você quer: "))
+quantidade_6548 = int(input("Digite quantos produtos do 6548 você quer: "))
+quantidade_0987 = int(input("Digite quantos produtos do 0987 você quer: "))
+quantidade_7623 = int(input("Digite quantos produtos do 7623 você quer: "))
+preco_1001 = ()
+preco_1001 = 
+preco_1324 = 
+preco_6548 = 
+preco_0987 = 
+preco_7623 = 
+
+print()
+
+# 8 - Lista 4 (Consumo de Água Residencial)
+
+print()
+
+# 9 - Lista 4 (Ínicio e Término de um Jogo)
+
