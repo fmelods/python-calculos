@@ -364,7 +364,7 @@ print()
 # 2 - Lista 4 (Calcular IMC)
 altura = float(input("Digite sua altura (em metros): "))
 peso = float(input("Digite o seu peso (em Kg): "))
-imc = (peso / altura**altura)
+imc = (peso / (altura*altura))
 print (f"seu imc é: ", imc)
 
 print()
@@ -409,27 +409,36 @@ print(f"Verifique seu novo salário em outros cargos: ",outros_cargos)
 print()
 
 # 6 - Lista 4 (Consumo de Energia Elétrica)
+pessoas = int(input("Digite o número de pessoas na residência: "))
+banho_minutos = float(input("Digite a média de tempo de banho em minutos: "))
+banho_dia = pessoas * banho_minutos
+banho_hora = banho_dia / 60
+kwh_dia = banho_hora * 2400 / 1000
+kwh_mes = kwh_dia * 30
+valor = kwh_mes * 0.4
+print(f"Consumo de energia por dia: {kwh_dia:.2f} kWh")
+print(f"Consumo de energia por mês: {kwh_mes:.2f} kWh")
+print(f"Valor a ser pago: R$ {valor:.2f}")
 
 print()
 
 # 7 - Lista 4 (Percentual de Imposto)
-quantidade_1001 = int(input("Digite quantos produtos do 1001 você quer: "))
-quantidade_1324 = int(input("Digite quantos produtos dos 1324 você quer: "))
-quantidade_6548 = int(input("Digite quantos produtos do 6548 você quer: "))
-quantidade_0987 = int(input("Digite quantos produtos do 0987 você quer: "))
-quantidade_7623 = int(input("Digite quantos produtos do 7623 você quer: "))
-preco_1001 = ()
-preco_1001 = 
-preco_1324 = 
-preco_6548 = 
-preco_0987 = 
-preco_7623 = 
-
+#quantidade dos produtos
+quantidade_1001 = int(input("Digite quantos produtos do 1001 você vendeu: "))
+quantidade_1324 = int(input("Digite quantos produtos do 1324 você vendeu: "))
+quantidade_6548 = int(input("Digite quantos produtos do 6548 você vendeu: "))
+quantidade_0987 = int(input("Digite quantos produtos do 0987 você vendeu: "))
+quantidade_7623 = int(input("Digite quantos produtos do 7623 você vendeu: "))
+#valor dos produtos com impostos
+preco_1001 = (5.32 * 0.18)
+preco_1324 = (6.45 * 0.18)
+preco_6548 = (2.37 * 0.06)
+preco_0987 = (5.32 * 0.06)
+preco_7623 = (6.45 * 0.12)
 print()
-
-# 8 - Lista 4 (Consumo de Água Residencial)
-
-print()
-
-# 9 - Lista 4 (Ínicio e Término de um Jogo)
-
+#execução
+print(f"O lucro total do produto 1001 foi: R${quantidade_1001*preco_1001}")
+print(f"O lucro total do produto 1323 foi: R${quantidade_1324*preco_1324}")
+print(f"O lucro total do produto 6548 foi: R${quantidade_6548*preco_6548}")
+print(f"O lucro total do produto 0987 foi: R${quantidade_0987*preco_0987}")
+print(f"O lucro total do produto 7623 foi: R${quantidade_7623*preco_7623}")
