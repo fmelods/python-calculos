@@ -702,8 +702,7 @@ if respostas == 2:
     print("Suspeita")
 elif 3 <= respostas <= 4:
     print("Cúmplice")
-elif respost
-as == 5:
+elif resposta == 5:
     print("Assassino")
 else:
     print("Inocente")
