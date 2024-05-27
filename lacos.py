@@ -22,4 +22,13 @@ while num != 0:
 
 print()
 
-# 4 - 
+# 4 - Imprimir de 1 até o numéro digitado, com apenas números ímpares
+num = 0
+num = int(input("Digite um número: "))
+while num != 0:
+    if num % 2 != 0:
+        print(f"Número: {num}")
+    num = num - 1
+
+print()
+
