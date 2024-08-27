@@ -25,10 +25,22 @@ print()
 # 4 - Imprimir de 1 até o numéro digitado, com apenas números ímpares
 num = 0
 num = int(input("Digite um número: "))
-while num != 0:
-    if num % 2 != 0:
-        print(f"Número: {num}")
-    num = num - 1
+count = 1
+while count <= num:
+    if count % 2 != 0:
+        print(f"Número: {count}")
+    count += 1
 
-print()
+# 5 - Multiplicação sucessiva
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+result = 0
+count = 0
+
+while count < num2:
+    result += num1
+    count += 1
+
+print(f"O resultado da multiplicação é: {result}")
 
