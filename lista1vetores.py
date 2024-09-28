@@ -1,7 +1,7 @@
-# v1 = [45, 89, 32, 12, 33]
+# vetor: v1 = [45, 89, 32, 12, 33]
 
 # 1 - primeiro elemento do vetor
-def primeiro_elemento(vetor)>
+def primeiro_elemento(vetor):
     return vetor[0]
 v1 = [45, 89, 32, 12, 33]
 print(primeiro_elemento(v1))
