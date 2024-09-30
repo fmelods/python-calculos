@@ -2,7 +2,6 @@
 contatos = []
 
 def criar_contato(nome_usual, nome_completo, telefone_fixo, telefone_celular):
-    """Função para criar um contato"""
     if len(contatos) >= 20:
         print("Limite de contatos atingido!")
     else:
@@ -16,7 +15,6 @@ def criar_contato(nome_usual, nome_completo, telefone_fixo, telefone_celular):
         print("Contato adicionado com sucesso!")
 
 def listar_contatos():
-    """Função para listar todos os contatos em ordem alfabética"""
     if contatos:
         contatos_ordenados = sorted(contatos, key=lambda x: x['nome_usual'])
         for contato in contatos_ordenados:
@@ -25,7 +23,6 @@ def listar_contatos():
         print("Nenhum contato cadastrado.")
 
 def buscar_contato(nome_usual):
-    """Função para buscar contato pelo nome usual"""
     for contato in contatos:
         if contato["nome_usual"] == nome_usual:
             print(f"Nome completo: {contato['nome_completo']}, Telefone fixo: {contato['telefone_fixo']}, Telefone celular: {contato['telefone_celular']}")
@@ -33,7 +30,6 @@ def buscar_contato(nome_usual):
     print("Contato não encontrado.")
 
 def atualizar_contato(nome_usual, novo_nome_completo=None, novo_telefone_fixo=None, novo_telefone_celular=None):
-    """Função para atualizar contato pelo nome usual"""
     for contato in contatos:
         if contato["nome_usual"] == nome_usual:
             if novo_nome_completo:
@@ -47,7 +43,6 @@ def atualizar_contato(nome_usual, novo_nome_completo=None, novo_telefone_fixo=No
     print("Contato não encontrado.")
 
 def deletar_contato(nome_usual):
-    """Função para deletar contato pelo nome usual"""
     for i, contato in enumerate(contatos):
         if contato["nome_usual"] == nome_usual:
             contatos.pop(i)

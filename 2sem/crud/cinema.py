@@ -3,15 +3,13 @@ import numpy as np
 
 # Definição da matriz de lugares
 cinema = np.full((14, 10), '_')  # Preencher com "_" para assentos vazios
-poltronas_vendidas = {}  # Dicionário para armazenar as vendas (poltrona -> [tipo_ingresso, idade])
+poltronas_vendidas = {} 
 
 def display_cinema():
-    """Exibe a matriz de assentos do cinema"""
     for i in range(14):
         print(f"Fileira {i+1}: {' '.join(cinema[i])}")
 
 def vender_bilhete(poltrona, tipo_ingresso, idade):
-    """Função para vender bilhetes"""
     if poltrona in poltronas_vendidas:
         print("Poltrona já vendida!")
     else:
@@ -21,7 +19,6 @@ def vender_bilhete(poltrona, tipo_ingresso, idade):
         print(f"Poltrona {poltrona} vendida com sucesso!")
 
 def calcular_total():
-    """Calcula a quantidade de ingressos e valores"""
     meia, inteira, menores_12, menores_18, maiores_idade = 0, 0, 0, 0, 0
     valor_total = 0
     
