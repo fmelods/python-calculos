@@ -1,0 +1,12 @@
+Nome: Felipe Melo
+Matricula: 556099
+Curso: ADS
+Turma: 1TDSPW
+Ano de Ingresso: 2024
+
+Nome: Giovanna Menezes
+Matricula: 24158
+Curso: RH
+Turma: 1RH
+Ano de Ingresso: 2024
+

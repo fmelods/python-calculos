@@ -1,0 +1,20 @@
+[
+    {
+        "Codigo": "3",
+        "Nome": "biscoito",
+        "Tipo": "fruta",
+        "Data de Entrada": "2024-10-07 20:12:44",
+        "Quantidade": 25,
+        "Valor de Entrada": 20.0,
+        "Valor de Venda Sugerido": 27.0
+    },
+    {
+        "Codigo": "4",
+        "Nome": "coxinha",
+        "Tipo": "doce",
+        "Data de Entrada": "2024-10-07 20:17:36",
+        "Quantidade": 89,
+        "Valor de Entrada": 13.0,
+        "Valor de Venda Sugerido": 17.55
+    }
+]
